@@ -6,8 +6,7 @@ const app = express()
 app.get('/', (req, res) => {
     console.log('Petición recibida')
 
-
-    res.send('<h1>Hola Mundo con la nueva cuenta de azure </h1>')
+    res.status(200).sendFile('index.html')
 })
 
 const PORT = process.env.PORT
