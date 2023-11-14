@@ -1,8 +1,4 @@
-//EJEMPLO
-const inputName = document.querySelector('#productName')
-const inputPrice = document.querySelector('#productPrice')
 
-const button = document.querySelector('button')
 
 //Capturar "Crear Ruta de Vuelo":
 const inputID = document.querySelector('#IDRutaVuelo')
