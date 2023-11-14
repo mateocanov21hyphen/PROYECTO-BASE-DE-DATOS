@@ -1,0 +1,47 @@
+#form-container {
+    display: flex;
+    flex-direction: column;
+    max-width: 20rem;
+}
+
+#RV{
+    text-align: center;
+}
+
+input {
+    margin-bottom: 0.5rem;
+}
+
+body {
+    margin: 30px;
+    padding: 10px;
+    font-family: sans-serif;
+    background-color: #e6f2ff;
+}
+
+header {
+    background-color: gray;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+section.titulos a {
+    margin: 0 10px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: gray;
+    color: #fff;
+    text-decoration: none;
+    
+}
+
+section.titulos {
+    display: flex;
+    justify-content: center;
+}
+
+#COLOR{
+    color: #e6f2ff;
+
+}
