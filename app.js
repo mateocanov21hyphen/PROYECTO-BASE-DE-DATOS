@@ -16,16 +16,16 @@ mongoose.connect(`mongodb+srv://mateocanovanegas2005:${process.env.MONGO_DB_PASS
 
 const productShema = mongoose.Schema(
     {
-        inputID: Text,
-        Aerolinea: Text,
-        AeropuertoOrigen: Text,
-        AeropuertoDestino: Text,
-        ContinenteOrigen: Text,
-        ContinenteDestino: Text,
-        PaisOrigen: Text,
-        PaisDestino: Text,
-        CiudadOrigen: Text,
-        CiudadDestino: Text
+        inputID: String,
+        Aerolinea: String,
+        AeropuertoOrigen: String,
+        AeropuertoDestino: String,
+        ContinenteOrigen: String,
+        ContinenteDestino: String,
+        PaisOrigen: String,
+        PaisDestino: String,
+        CiudadOrigen: String,
+        CiudadDestino: String
 
     },
     { timestamps: true }
