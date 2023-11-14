@@ -16,10 +16,19 @@ mongoose.connect(`mongodb+srv://mateocanovanegas2005:${process.env.MONGO_DB_PASS
 
 const productShema = mongoose.Schema(
     {
-        name: { type: String, require: true },
-        price: Number,
+        inputID: Text,
+        Aerolinea: Text,
+        AeropuertoOrigen: Text,
+        AeropuertoDestino: Text,
+        ContinenteOrigen: Text,
+        ContinenteDestino: Text,
+        PaisOrigen: Text,
+        PaisDestino: Text,
+        CiudadOrigen: Text,
+        CiudadDestino: Text
+
     },
-    { timestamps: true}
+    { timestamps: true }
 )
 
 const Product = mongoose.model('Product', productShema)
@@ -31,11 +40,11 @@ app.post('/api/v1/products', (req, res) => {
     const newProduct = new Product(req.body)
 
     newProduct
-    .save()
-    .then( result  => {
-        res.status(201).json({ ok: true })
-    })
-    .catch((err) => console.log(err))
+        .save()
+        .then(result => {
+            res.status(201).json({ ok: true })
+        })
+        .catch((err) => console.log(err))
 })
 
 app.use(express.static(path.join(__dirname, 'public')))
